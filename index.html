@@ -16,7 +16,11 @@ text, bg, primary, secondary, accent
         font-family: Arial, sans-serif;
         margin: 0;
         padding: 0;
-        background-color: #204b64;
+        /* background-color: #204b64; */
+        background-image: url(bg1.jpg);
+        background-size: cover;
+        background-attachment: fixed;
+        background-position: center;
         color: #f0e9f4; /* text color */
       }
 
@@ -388,5 +392,19 @@ text, bg, primary, secondary, accent
         </div>
       </section>
     </div>
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
+    <script>
+      // Add a function to handle the parallax scrolling effect
+      $(document).ready(function () {
+        $(window).scroll(function () {
+          // Calculate the new background position based on the scroll position
+          var yPos = -($(window).scrollTop() / 2);
+          // Apply the new background position
+          $("body").css("background-position", "center " + yPos + "px");
+        });
+      });
+    </script>
   </body>
 </html>
