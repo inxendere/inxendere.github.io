@@ -1,7 +1,389 @@
+<!-- 
+Color palette
+#f0e9f4,#03081f,#aab6ad,#0e1110,#8a667f
+text, bg, primary, secondary, accent
+-->
 <!DOCTYPE html>
-<html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Inxendere</title>
+    <link rel="stylesheet" href="styles.css" />
+    <style>
+      /* Reset some default margin for body */
+      body {
+        font-family: Arial, sans-serif;
+        margin: 0;
+        padding: 0;
+        background-color: #aab6ad; /* Dark background color */
+        color: #f0e9f4; /* Light text color */
+      }
+
+      /* Center all content on the screen */
+      .container {
+        max-width: 800px;
+        margin-top: 20px;
+        margin-bottom: 20px;
+        margin-left: auto;
+        margin-right: auto;
+        padding-top: 5px;
+        padding-bottom: 5px;
+        padding-right: 20px;
+        padding-left: 20px;
+        background-color: #03081f;
+        border: 3px solid #ccc;
+      }
+      .container_top {
+        max-width: 800px;
+        margin-top: 10px;
+        margin-bottom: 10px;
+        margin-left: auto;
+        margin-right: auto;
+        padding-top: 10px;
+        padding-bottom: 5px;
+        padding-right: 20px;
+        padding-left: 20px;
+        background-color: #03081f;
+        border: 3px solid #ccc;
+      }
+
+      header {
+        display: flex;
+        align-items: center;
+        padding: 10px;
+      }
+
+      img {
+        max-width: 100px;
+        border-radius: 90%;
+        margin-right: 10px;
+      }
+
+      .info {
+        text-align: left;
+      }
+
+      h1 {
+        font-size: 40px;
+        color: #f0e9f4;
+        margin: 0;
+      }
+
+      nav ul {
+        list-style-type: none;
+        padding: 0;
+      }
+
+      nav li {
+        display: inline;
+        color: ;
+        margin-right: 20px;
+      }
+
+      nav a {
+        color: #fff; /* Link color */
+        text-decoration: none; /* Remove underlines from links */
+      }
+
+      /* Style links on hover */
+      nav a:hover {
+        text-decoration: underline;
+      }
+
+      .section {
+        padding: 5px;
+      }
+
+      /* Create a grid layout with two columns */
+      .project-grid {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr); /* Two equal columns */
+        gap: 10px; /* Gap between grid items */
+      }
+
+      /* Style each project card */
+      .project {
+        border: 2px solid #8a667f;
+        border-radius: 5px;
+        padding: 10px;
+        text-align: center;
+      }
+      .project:hover {
+        border: 2px solid #00fff2;
+        border-radius: 5px;
+        padding: 10px;
+        text-align: center;
+      }
+
+      .project img {
+        max-width: 100%; /* Ensure images fit within their containers */
+        max-height: 100%; /* Ensure images fit within their containers */
+        border-radius: 5px;
+      }
+
+      .project h3 {
+        font-size: 20px;
+        margin: 10px 0;
+      }
+
+      .project p {
+        margin: 0;
+      }
+
+      .about {
+        padding: 0px;
+      }
+      /* Style links within project grids */
+      .project-link {
+        text-decoration: none; /* Remove underlines from links */
+        color: #fff; /* Set the desired text color for links */
+      }
+
+      /* Style links on hover */
+      .project-link:hover {
+        text-decoration: none; /* Remove underline on hover */
+        color: #fff; /* Set the desired text color for links on hover */
+      }
+      p.indent {
+        text-indent: 5%;
+      }
+    </style>
+  </head>
   <body>
-    <h1>Hello World!!!!</h1>
-    <p>I'm hosted with GitHub Pages.</p>
+    <div class="container_top">
+      <header>
+        <img src="profilepic.jpg" alt="Your Name" />
+        <div class="info">
+          <h1>Inxendere</h1>
+          <nav>
+            <ul>
+              <li>Discord: inx2012</li>
+              <li>
+                <a href="https://twitter.com/Inxendere_" target="_blank"
+                  >Twitter (NSFW!)</a
+                >
+              </li>
+              <li>realinxdev@gmail.com</li>
+              <li>
+                <a
+                  href="https://www.youtube.com/channel/UCobCfuqqCqaHFpPRSG2YkfQ"
+                  target="_blank"
+                  >YouTube</a
+                >
+              </li>
+              <li>
+                <a
+                  href="https://myanimelist.net/profile/incendmoonlite"
+                  target="_blank"
+                  >MAL</a
+                >
+              </li>
+            </ul>
+          </nav>
+        </div>
+      </header>
+    </div>
+
+    <div class="container">
+      <section class="about">
+        <h2>About Me</h2>
+        <p class="indent">
+          Greetings visitor! My name is Taief but I go by my pen name Inxendere
+          online. I love to draw, animate, code, and 3d model. I am an aspiring
+          game developer experienced in Unity and Blender. Please look around my
+          page and feel free to give feedback or reach out if you would like to
+          work together.
+        </p>
+        <p class="indent">
+          A little about me: my favourite bands/singers are Led Zeppelin, Kino,
+          and Aimer. My favourite anime are Toradora and Shinsekai Yori. I have
+          an ungodly amount of hours on HOI4. And I'm an avid reader of history.
+          If we have anything in common, feel free to reach out! Always looking
+          to make new friends <3
+        </p>
+      </section>
+    </div>
+    <div class="container">
+      <section class="section">
+        <h2>Games</h2>
+        <p>
+          I first downloaded Unity back during quarantine. I've learned a lot
+          since then and am still discovering new things every day.
+        </p>
+        <div class="project-grid">
+          <a
+            href="https://twitter.com/Inxendere_/status/1676264340528275468?s=20"
+            target="_blank"
+            class="project-link"
+          >
+            <div class="project">
+              <img src="ascadia.jpg" alt="Game 1" />
+              <h3>Ascadia</h3>
+              <p>
+                A stylized semi open world 3D pixelated game. Made using URP.
+              </p>
+            </div>
+          </a>
+          <a
+            href="https://incenderemoonlite.itch.io/gmtk-2023-jam-abandoned"
+            target="_blank"
+            class="project-link"
+          >
+            <div class="project">
+              <img src="game2.jpg" alt="Game 2" />
+              <h3>Anti Subway Surfer</h3>
+              <p>
+                My game jam submission for GMTK 2023. The theme was "role
+                reversed" so I thought I'd make a subway surfer game where you
+                control the trains instead! ps: If you can't see the player or
+                time, please zoom out in your browser.
+              </p>
+            </div>
+          </a>
+          <a
+            href="https://inxdev.itch.io/eleventh"
+            target="_blank"
+            class="project-link"
+          >
+            <div class="project">
+              <img src="game3.jpg" alt="Game 3" />
+              <h3>Eleventh</h3>
+              <p>
+                A linear story driven game about a princess and her prince where
+                things are not what they seem...
+              </p>
+            </div>
+          </a>
+          <!-- Add more game projects here -->
+        </div>
+      </section>
+    </div>
+    <div class="container">
+      <section class="section">
+        <h2>Animations</h2>
+
+        <p>
+          I also like to draw. I wanted to be an animator or a mangaka as a
+          child. Click on the images to view the animations. If you want to look
+          at the drawings as well, they're on my twitter.
+        </p>
+
+        <div class="project-grid">
+          <a
+            href="https://twitter.com/Inxendere_/status/1647030390387867649?s=20"
+            target="_blank"
+            class="project-link"
+          >
+            <div class="project">
+              <img src="art2.jpg" alt="Artwork 2" />
+              <h3>Office lady takes a break</h3>
+              <p>I wanted to try mixing 2d and 3d together.</p>
+            </div>
+          </a>
+          <a
+            href="https://youtu.be/A5S9EzTyhPI?si=rEyxYwW131hxYGQX"
+            target="_blank"
+            class="project-link"
+          >
+            <div class="project">
+              <img src="art3.jpg" alt="Artwork 2" />
+              <h3>Rent a Girlfriend opening but it's Fate ((girls))</h3>
+              <p>Yea what the title says.</p>
+            </div>
+          </a>
+          <a
+            href="https://twitter.com/Inxendere_/status/1571170300250685445?s=20"
+            target="_blank"
+            class="project-link"
+          >
+            <div class="project">
+              <img src="art4.jpg" alt="Artwork 2" />
+              <h3>Nero Sad Cat trend!</h3>
+              <p>Nero doing the sad cat dance.</p>
+            </div>
+          </a>
+          <a
+            href="https://twitter.com/Inxendere_/status/1545438156148936704?s=20"
+            target="_blank"
+            class="project-link"
+          >
+            <div class="project">
+              <img src="art5.jpg" alt="Artwork 2" />
+              <h3>My version of Lost Kitten</h3>
+              <p>Inspired by that legendary Shimatsuku vid</p>
+            </div>
+          </a>
+          <!-- Add more art and animation projects here -->
+        </div>
+      </section>
+    </div>
+
+    <div class="container">
+      <section class="section">
+        <h2>Miscellaneous</h2>
+
+        <p>
+          Silly things I did while bored. Some are high effort projects I spent
+          weeks on, others are goofy memes I whipped up in 20 mins. Wide range
+          of quality.
+        </p>
+
+        <div class="project-grid">
+          <a
+            href="https://twitter.com/Inxendere_/status/1608600401556942849?s=20"
+            target="_blank"
+            class="project-link"
+          >
+            <div class="project">
+              <img src="misc1.jpg" alt="Misc Project 2" />
+              <h3>Object Specific Pixellation - Unity</h3>
+              <p>
+                First version of Ascadia. Used render textures and layers to
+                pixelate only the objects that I wanted to be pixelated.
+              </p>
+            </div>
+          </a>
+
+          <a
+            href="https://twitter.com/Inxendere_/status/1515425232403812359?s=20"
+            target="_blank"
+            class="project-link"
+          >
+            <div class="project">
+              <img src="misc2.jpg" alt="Misc Project 2" />
+              <h3>Hatsune Miku asks if you're from Quebec</h3>
+              <p>
+                My first and hopefully not only vocaloid project. Just a meme to
+                learn the software but I want to make proper songs with it.
+              </p>
+            </div>
+          </a>
+          <a
+            href="https://youtube.com/shorts/olZForOVig8?si=JuIbYGSknVIkJsLL"
+            target="_blank"
+            class="project-link"
+          >
+            <div class="project">
+              <img src="misc3.jpg" alt="Misc Project 2" />
+              <h3>Senzawa (;-;) song but it's Nero</h3>
+              <p>Nero sings The Senpai Song!</p>
+            </div>
+          </a>
+          <a
+            href="https://youtube.com/shorts/oDm7WWyYki8?si=HsklghklrB-4Nt9e"
+            target="_blank"
+            class="project-link"
+          >
+            <div class="project">
+              <img src="misc4.jpg" alt="Misc Project 2" />
+              <h3>"Quality content"</h3>
+              <p>My first 3d animation. Made a meme.</p>
+            </div>
+          </a>
+          <!-- Add more miscellaneous projects here -->
+        </div>
+      </section>
+    </div>
   </body>
 </html>
