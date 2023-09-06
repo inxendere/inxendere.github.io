@@ -16,8 +16,8 @@ text, bg, primary, secondary, accent
         font-family: Arial, sans-serif;
         margin: 0;
         padding: 0;
-        background-color: #aab6ad; /* Dark background color */
-        color: #f0e9f4; /* Light text color */
+        background-color: #204b64;
+        color: #f0e9f4; /* text color */
       }
 
       /* Center all content on the screen */
@@ -108,17 +108,19 @@ text, bg, primary, secondary, accent
         border-radius: 5px;
         padding: 10px;
         text-align: center;
+        transition: border-color 0.3s ease-in-out;
       }
       .project:hover {
-        border: 2px solid #00fff2;
+        border: 2px solid;
+        border-color: #00fff2;
         border-radius: 5px;
         padding: 10px;
         text-align: center;
       }
 
       .project img {
-        max-width: 100%; /* Ensure images fit within their containers */
-        max-height: 100%; /* Ensure images fit within their containers */
+        max-width: 100%; /* Images fit within their containers */
+        max-height: 100%;
         border-radius: 5px;
       }
 
@@ -203,6 +205,7 @@ text, bg, primary, secondary, accent
         </p>
       </section>
     </div>
+
     <div class="container">
       <section class="section">
         <h2>Games 1234</h2>
