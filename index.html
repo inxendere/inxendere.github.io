@@ -64,6 +64,19 @@ text, bg, primary, secondary, accent
         padding: 10px;
       }
 
+      .spinner {
+        animation: spin 2s linear infinite;
+      }
+
+      @keyframes spin {
+        from {
+          transform: rotate(0deg);
+        }
+        to {
+          transform: rotate(360deg);
+        }
+      }
+
       img {
         max-width: 100px;
         border-radius: 90%;
@@ -166,7 +179,7 @@ text, bg, primary, secondary, accent
   <body>
     <div class="container_top">
       <header>
-        <img src="profilepic.jpg" alt="Your Name" />
+        <img class="spinner" src="profilepic.jpg" alt="Your Name" />
         <div class="info">
           <h1>Inxendere</h1>
           <nav>
