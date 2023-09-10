@@ -3,70 +3,93 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="styles.css" />
+    <!-- load desktop-specific CSS for screens wider than 768px -->
+    <link
+      rel="stylesheet"
+      href="styles_desktop.css"
+      media="screen and (min-width: 769px)"
+    />
+    <!-- load mobile-specific CSS for screens up to 768px wide -->
+    <link
+      rel="stylesheet"
+      href="styles_mobile.css"
+      media="screen and (max-width: 768px)"
+    />
     <script src="script.js"></script>
     <title>Inxendere's Website</title>
   </head>
+
   <body>
     <div class="outer-container">
       <div class="image-container">
         <!-- img matches with window using id. Make sure id is the same as the window it should open. in window, have window- infront of id. -->
         <div class="icon">
           <img
-            id="win-blue"
+            id="win-about-me"
             class="open-window-button"
             src="icon1.jpg"
-            alt="Open Window 1"
+            alt="About Me"
           />
-          <span> Text Test</span>
+          <span>About Me</span>
         </div>
         <div class="icon">
           <img
             id="win-pfp"
             class="open-window-button"
             src="profilepic.jpg"
-            alt="Open Window 2"
+            alt="Projects"
           />
-          <span> Text Test</span>
+          <span>Projects</span>
         </div>
         <div class="icon">
           <img
             id="win-red"
             class="open-window-button"
             src="icon2.jpg"
-            alt="Open Window 2"
+            alt="Animations"
           />
-          <span> Text Test</span>
+          <span>Animations</span>
         </div>
         <div class="icon">
           <img
             id="win-nero"
             class="open-window-button"
             src="art1.jpg"
-            alt="Open Window 2"
+            alt="Miscellaneous"
           />
-          <span> Text Test</span>
+          <span>Miscellaneous</span>
         </div>
         <div class="icon">
           <img
             id="win-nero"
             class="open-window-button"
             src="art1.jpg"
-            alt="Open Window 2"
+            alt="Music"
           />
-          <span> Text Test</span>
+          <span>Music</span>
         </div>
         <div class="icon">
           <img
             id="win-nero"
             class="open-window-button"
             src="art1.jpg"
-            alt="Open Window 2"
+            alt="Anime"
           />
-          <span> Text Test</span>
+          <span>Anime</span>
+        </div>
+        <div class="icon">
+          <img
+            id="win-specs"
+            class="open-window-button"
+            src="art1.jpg"
+            alt="Specs"
+          />
+          <span>Specs</span>
         </div>
       </div>
     </div>
+
+    <!-- Windows section -->
 
     <div class="window" id="window-win-pfp">
       <div class="window-top-bar">
@@ -78,15 +101,19 @@
       </div>
     </div>
 
-    <div class="window" id="window-win-blue">
+    <div class="window" id="window-win-about-me">
       <div class="window-top-bar">
-        <span class="window-name">Top Bar Text</span>
+        <span class="window-name">About Me</span>
         <button class="close-button">X</button>
       </div>
       <div class="window-content">
+        <img src="misc1.jpg" />
+        <h1>Greetings,</h1>
         <p>
-          This is window 1 content. You can add more content here to see the
-          scrollbar when it exceeds the window size.
+          my name is Taief (pen name Inxendere) and I love to draw, animate,
+          code, and 3d model. I am an aspiring game developer experienced in
+          Unity and Blender. Please look around my page and feel free to give
+          feedback or reach out if you would like to work together.
         </p>
       </div>
     </div>
@@ -108,6 +135,7 @@
         <button class="close-button">X</button>
       </div>
       <div class="window-content">
+        <img src="misc1.jpg" />
         <p>
           This is window 2 content. You can add more content here to see the
           scrollbar when it exceeds the window size.
@@ -131,16 +159,61 @@
       </div>
     </div>
 
-    <div class="bottom-panel">
-      <a href="https://www.youtube.com" target="_blank" class="panel-item">
-        <img src="icon1.jpg" alt="Image 1" />
-        <p>Icon 1</p>
-      </a>
+    <div class="window" id="window-win-specs">
+      <div class="window-top-bar">
+        <span class="window-name">My battle machine.</span>
+        <button class="close-button">X</button>
+      </div>
+      <div class="window-content">
+        <div class="window-content-specs">
+          <div>
+            <h4>Desktop</h4>
+            <p>
+              CPU: Ryzen 7 5700g <br />GPU: RTX 3070 8GB <br />RAM: 64gb DDR4
+            </p>
+          </div>
+          <div>
+            <h4>Laptop</h4>
+            <p>
+              CPU: Ryzen 7 5700g <br />GPU: RTX 3070 8GB <br />RAM: 64gb DDR4
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- taskbar section -->
+
+    <div class="taskbar-panel">
       <a href="https://www.youtube.com" target="_blank" class="panel-item">
         <img src="icon2.jpg" alt="Image 2" />
-        <p>Icon 2</p>
+        <p>realinxdev@gmail.com</p>
       </a>
-      <!-- Add more panel items as needed -->
+
+      <a href="https://www.youtube.com" target="_blank" class="panel-item">
+        <img src="icon1.jpg" alt="Image 1" />
+        <p>Discord</p>
+      </a>
+
+      <a href="https://www.youtube.com" target="_blank" class="panel-item">
+        <img src="icon2.jpg" alt="Image 2" />
+        <p>Twitter</p>
+      </a>
+
+      <a href="https://www.youtube.com" target="_blank" class="panel-item">
+        <img src="icon2.jpg" alt="Image 2" />
+        <p>YouTube</p>
+      </a>
+
+      <a href="https://www.youtube.com" target="_blank" class="panel-item">
+        <img src="icon2.jpg" alt="Image 2" />
+        <p>Spotify</p>
+      </a>
+
+      <a href="https://www.youtube.com" target="_blank" class="panel-item">
+        <img src="icon2.jpg" alt="Image 2" />
+        <p>MAL</p>
+      </a>
     </div>
   </body>
 </html>
