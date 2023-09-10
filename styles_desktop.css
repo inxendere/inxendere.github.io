@@ -4,6 +4,11 @@
     font-family: Arial, sans-serif;
     margin: 0;
     overflow: hidden; /* Prevent body scrolling */
+
+    background-image: url("bg_desktop_1920x1080.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
   }
 
   .outer-container {
@@ -100,7 +105,7 @@
 
   /* Style for the bottom panel */
   .taskbar-panel {
-    background-color: #2e2c2c;
+    background-color: rgba(15, 14, 68, 0.4);
     padding: 1px;
     position: fixed;
     bottom: 0;
