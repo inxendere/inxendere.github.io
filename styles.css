@@ -8,7 +8,7 @@ body {
 .outer-container {
   max-width: 33.33%; /* Set the maximum width to one-third of the page */
   float: left; /* Float the container to the left */
-  margin: 0.5%; /* Add margin for spacing */
+  margin: 1%; /* Add margin for spacing */
 }
 
 .image-container {
@@ -17,7 +17,22 @@ body {
   grid-gap: 10px; /* Adjust the gap between images */
   align-items: start; /* Align items at the start (top) of the container */
   justify-content: start; /* Align content to the start (left) of the container */
-  margin: 20px; /* Add margin to the container for spacing */
+  margin: 5px; /* Add margin to the container for spacing */
+}
+.icon {
+  text-align: center;
+  flex-direction: column;
+}
+.icon img {
+  display: block; /* Make the image a block element to stack it above the text */
+  max-width: 64px;
+  max-height: 64px;
+  margin: 0 auto; /* Center the image horizontally within the icon */
+}
+.icon span {
+  display: block; /* Make the span a block element to stack it below the image */
+  text-align: center; /* Center the text horizontally */
+  margin-top: 5px; /* Add some spacing between the image and text */
 }
 
 /* Style for the images (optional) */
