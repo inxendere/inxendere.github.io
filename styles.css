@@ -9,6 +9,14 @@ body {
   background-color: #fff;
   margin: 20px auto;
   box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+  position: absolute; /* Position the window */
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%); /* Center the window */
+  max-width: 500px;
+  max-height: 500px;
+  overflow: auto; /* Add scrollbar when content exceeds dimensions */
+  display: none; /* start out hidden */
 }
 
 .window-top-bar {
@@ -24,6 +32,7 @@ body {
   color: #fff;
   font-size: 18px;
   cursor: pointer;
+  align-items: right;
   margin-right: 10px; /* Add margin to push it to the right */
 }
 

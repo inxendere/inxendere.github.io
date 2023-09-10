@@ -4,16 +4,38 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="styles.css" />
-    <title>Inxendere</title>
+    <script src="script.js"></script>
+    <title>Inxendere's Website</title>
   </head>
   <body>
-    <div class="window">
+    <img
+      id="open-window-button1"
+      class="open-window-button"
+      src="icon1.jpg"
+      alt="Open Window 1"
+    />
+    <img
+      id="open-window-button2"
+      class="open-window-button"
+      src="icon2.jpg"
+      alt="Open Window 2"
+    />
+
+    <div class="window" id="red-window" data-zindex="1">
       <div class="window-top-bar">
         <button class="close-button">X</button>
       </div>
       <div class="window-content">
-        <!-- Your main content goes here -->
-        <p>Hello, this is your window content.</p>
+        <p>Hello, this is blue window content.</p>
+      </div>
+    </div>
+
+    <div class="window" id="blue-window" data-zindex="1">
+      <div class="window-top-bar">
+        <button class="close-button">X</button>
+      </div>
+      <div class="window-content">
+        <p>Hello, this is red window content.</p>
       </div>
     </div>
   </body>
