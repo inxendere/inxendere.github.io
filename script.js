@@ -1,9 +1,13 @@
 document.addEventListener("DOMContentLoaded", function () {
   const windows = document.querySelectorAll(".window");
+  var w = window.innerWidth;
+  var h = window.innerHeight;
+  console.log("browser window width: ", w);
+  console.log("browser window height: ", h);
   let activeWindow = null;
   let initialX, initialY;
 
-  // Function to bring a window to the front by setting a higher z-index
+  //bring a window to the front by setting a higher z-index
   function bringWindowToFront(window) {
     windows.forEach((w) => {
       w.style.zIndex = w === window ? "9999" : "1";
@@ -17,9 +21,17 @@ document.addEventListener("DOMContentLoaded", function () {
       const imageId = button.id;
       const windowId = "window-" + imageId;
       const window = document.getElementById(windowId);
+
       if (window) {
-        bringWindowToFront(window);
         window.style.display = "block";
+
+        // centering window on click
+        const windowWidth = window.offsetWidth;
+        const windowHeight = window.offsetHeight;
+        window.style.left = w / 2 - windowWidth / 2 + "px";
+        window.style.top = h / 2 - windowHeight / 2 + "px";
+
+        bringWindowToFront(window);
       }
     });
   });
