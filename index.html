@@ -8,34 +8,56 @@
     <title>Inxendere's Website</title>
   </head>
   <body>
+    <!-- img matches with window using id. Make sure id is the same as the window it should open. in window, have window- infront of id. -->
     <img
-      id="open-window-button1"
+      id="win-blue"
       class="open-window-button"
       src="icon1.jpg"
       alt="Open Window 1"
     />
     <img
-      id="open-window-button2"
+      id="win-pfp"
+      class="open-window-button"
+      src="profilepic.jpg"
+      alt="Open Window 2"
+    />
+    <img
+      id="win-red"
       class="open-window-button"
       src="icon2.jpg"
       alt="Open Window 2"
     />
 
-    <div class="window" id="red-window" data-zindex="1">
+    <div class="window" id="window-win-pfp">
       <div class="window-top-bar">
         <button class="close-button">X</button>
       </div>
       <div class="window-content">
-        <p>Hello, this is blue window content.</p>
+        <p>THIS IS THE PROFILE PICTOOR!</p>
       </div>
     </div>
 
-    <div class="window" id="blue-window" data-zindex="1">
+    <div class="window" id="window-win-blue">
       <div class="window-top-bar">
         <button class="close-button">X</button>
       </div>
       <div class="window-content">
-        <p>Hello, this is red window content.</p>
+        <p>
+          This is window 1 content. You can add more content here to see the
+          scrollbar when it exceeds the window size.
+        </p>
+      </div>
+    </div>
+
+    <div class="window" id="window-win-red">
+      <div class="window-top-bar">
+        <button class="close-button">X</button>
+      </div>
+      <div class="window-content">
+        <p>
+          This is window 2 content. You can add more content here to see the
+          scrollbar when it exceeds the window size.
+        </p>
       </div>
     </div>
   </body>

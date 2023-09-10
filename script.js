@@ -1,11 +1,22 @@
 // handles closing windows
 document.addEventListener("DOMContentLoaded", function () {
   const openButtons = document.querySelectorAll(".open-window-button");
-  const windows = document.querySelectorAll(".window");
 
-  openButtons.forEach((button, index) => {
+  openButtons.forEach((button) => {
     button.addEventListener("click", function () {
-      windows[index].style.display = "block"; // Show the corresponding window
+      // Get the ID of the clicked image
+      const imageId = button.id;
+
+      // Construct the ID of the associated window
+      const windowId = "window-" + imageId;
+
+      // Find the window by its ID
+      const window = document.getElementById(windowId);
+
+      // If the window exists, open it
+      if (window) {
+        window.style.display = "block";
+      }
     });
   });
 
@@ -26,35 +37,30 @@ document.addEventListener("DOMContentLoaded", function () {
 document.addEventListener("DOMContentLoaded", function () {
   const windows = document.querySelectorAll(".window");
   let activeWindow = null;
-  let initialOffsetX, initialOffsetY;
+  let initialX, initialY;
 
   windows.forEach((window) => {
     const topBar = window.querySelector(".window-top-bar");
 
     topBar.addEventListener("mousedown", (e) => {
       activeWindow = window;
-      initialOffsetX = e.clientX - topBar.getBoundingClientRect().left;
-      initialOffsetY = e.clientY - topBar.getBoundingClientRect().top;
-      window.style.zIndex = "9999"; // Bring the window to the front
+      initialX = e.clientX - window.getBoundingClientRect().left;
+      initialY = e.clientY - window.getBoundingClientRect().top;
+      // Bring the clicked window to the front
+      windows.forEach((w) => {
+        w.style.zIndex = w === window ? "9999" : "1";
+      });
     });
   });
 
   document.addEventListener("mousemove", (e) => {
     if (!activeWindow) return;
-    const left = e.clientX - initialOffsetX;
-    const top = e.clientY - initialOffsetY;
+    const left = e.clientX - initialX;
+    const top = e.clientY - initialY;
 
     // Ensure the window stays within the viewport
-    activeWindow.style.left =
-      Math.min(
-        window.innerWidth - activeWindow.offsetWidth,
-        Math.max(0, left)
-      ) + "px";
-    activeWindow.style.top =
-      Math.min(
-        window.innerHeight - activeWindow.offsetHeight,
-        Math.max(0, top)
-      ) + "px";
+    activeWindow.style.left = left + "px";
+    activeWindow.style.top = top + "px";
   });
 
   document.addEventListener("mouseup", () => {
