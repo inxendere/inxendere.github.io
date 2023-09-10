@@ -64,13 +64,17 @@
     max-width: 500px;
     max-height: 550px;
     overflow: auto; /* Add scrollbar when content exceeds dimensions */
-    padding-top: 20px;
+  }
+
+  .window-content p {
+    padding-top: 10px;
   }
 
   .window-content img {
     max-width: 450px;
     max-height: 450px;
-    padding: 5px;
+    padding-left: 5px;
+    padding-right: 5px;
     padding-top: 20px;
   }
 
