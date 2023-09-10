@@ -5,6 +5,27 @@ body {
   overflow: hidden; /* Prevent body scrolling */
 }
 
+.outer-container {
+  max-width: 33.33%; /* Set the maximum width to one-third of the page */
+  float: left; /* Float the container to the left */
+  margin: 0.5%; /* Add margin for spacing */
+}
+
+.image-container {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr); /* 2 columns with equal width */
+  grid-gap: 10px; /* Adjust the gap between images */
+  align-items: start; /* Align items at the start (top) of the container */
+  justify-content: start; /* Align content to the start (left) of the container */
+  margin: 20px; /* Add margin to the container for spacing */
+}
+
+/* Style for the images (optional) */
+.open-window-button {
+  max-width: 100%; /* Ensure images don't exceed their container */
+  height: auto; /* Maintain aspect ratio */
+}
+
 .window {
   position: absolute;
   max-width: 500px;
