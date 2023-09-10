@@ -9,6 +9,7 @@
     background-size: cover;
     background-repeat: no-repeat;
     background-attachment: fixed;
+    background-position-y: bottom;
   }
 
   .outer-container {
@@ -51,17 +52,25 @@
   .window {
     position: absolute;
     max-width: 500px;
-    max-height: 500px;
-    overflow: auto; /* Add scrollbar when content exceeds dimensions */
+    max-height: 600px;
+
     background-color: #fff;
     border: 2px solid #ccc;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
     display: none; /* have it closed by default */
   }
 
+  .window-content {
+    max-width: 500px;
+    max-height: 550px;
+    overflow: auto; /* Add scrollbar when content exceeds dimensions */
+  }
+
   .window-content img {
     max-width: 450px;
     max-height: 450px;
+    padding: 5px;
+    padding-top: 20px;
   }
 
   .window-top-bar {
@@ -71,6 +80,10 @@
     cursor: grab; /* Change cursor to indicate draggable */
     display: flex;
     justify-content: space-between;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
   }
 
   .window-name {
