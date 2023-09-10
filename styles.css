@@ -82,3 +82,55 @@ body {
 .window-content {
   padding: 20px;
 }
+
+/* Style for the bottom panel */
+.bottom-panel {
+  background-color: #f2f2f2;
+  padding: 1px;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 32px;
+  display: flex;
+  text-decoration: none;
+}
+
+/* Style for individual panel items */
+.panel-item {
+  display: flex;
+  align-items: center;
+  padding-left: 2px;
+  border-color: #333;
+  border: 2px solid;
+  border-radius: 10%;
+  margin-right: 0.2%;
+}
+/* .panel-item a {
+  text-decoration: none !important;
+} */
+
+.panel-item a {
+  text-decoration: none;
+}
+.panel-item:hover {
+  border-color: yellow;
+}
+
+.panel-item img {
+  max-width: 24px;
+  max-height: 24px;
+}
+
+.panel-item p {
+  font-size: 120%;
+  text-align: center;
+  text-decoration: none !important;
+}
+/* Apply margin to all but the last panel item to avoid a gap on the right of the last item */
+
+/* might be useful */
+
+/* .panel-item:not(:last-child) {
+  margin-right: 10px;
+} */
