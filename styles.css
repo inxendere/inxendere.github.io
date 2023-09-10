@@ -1,0 +1,157 @@
+/* Reset some default margin for body */
+body {
+  font-family: "Raleway", sans-serif;
+  margin: 0;
+  padding: 0;
+  /* background-color: #204b64; */
+  background-image: url(bg1.png);
+  background-size: cover;
+  background-attachment: fixed;
+  background-position: center;
+  color: #f0e9f4; /* text color */
+}
+
+/* Center all content on the screen */
+.container {
+  max-width: 800px;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  margin-left: auto;
+  margin-right: auto;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  padding-right: 20px;
+  padding-left: 20px;
+  background-color: #03081f;
+  border: 3px solid #ccc;
+}
+.container_top {
+  max-width: 800px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  margin-left: auto;
+  margin-right: auto;
+  padding-top: 10px;
+  padding-bottom: 5px;
+  padding-right: 20px;
+  padding-left: 20px;
+  background-color: #03081f;
+  border: 3px solid #ccc;
+}
+
+header {
+  display: flex;
+  align-items: center;
+  padding: 10px;
+}
+
+.spinner {
+  animation: spin 2s linear infinite;
+}
+
+@keyframes spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+img {
+  max-width: 100px;
+  border-radius: 90%;
+  margin-right: 10px;
+}
+
+.info {
+  text-align: left;
+}
+
+h1 {
+  font-size: 40px;
+  color: #f0e9f4;
+  margin-left: 5px;
+}
+
+nav ul {
+  list-style-type: none;
+  margin-left: 5px;
+  padding: 0;
+}
+
+nav li {
+  display: inline;
+  margin-right: 20px;
+}
+
+nav a {
+  color: #fff; /* Link color */
+  text-decoration: none; /* Remove underlines from links */
+}
+
+/* Style links on hover */
+nav a:hover {
+  text-decoration: underline;
+}
+
+.section {
+  padding: 5px;
+}
+
+/* Create a grid layout with two columns */
+.project-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr); /* Two equal columns */
+  gap: 10px; /* Gap between grid items */
+}
+
+/* Style each project card */
+.project {
+  border: 2px solid #8a667f;
+  border-radius: 5px;
+  padding: 10px;
+  text-align: center;
+  transition: border-color 0.3s ease-in-out;
+}
+.project:hover {
+  border: 2px solid;
+  border-color: yellow;
+  border-radius: 5px;
+  padding: 10px;
+  text-align: center;
+}
+
+.project img {
+  max-width: 100%; /* Images fit within their containers */
+  max-height: 100%;
+  border-radius: 5px;
+}
+
+.project h3 {
+  font-size: 20px;
+  font-weight: bold;
+  margin: 10px 0;
+}
+
+.project p {
+  margin: 0;
+}
+
+.about {
+  padding: 0px;
+}
+/* Style links within project grids */
+.project-link {
+  text-decoration: none; /* Remove underlines from links */
+  color: #fff; /* Set the desired text color for links */
+}
+
+/* Style links on hover */
+.project-link:hover {
+  text-decoration: none; /* Remove underline on hover */
+  color: #fff; /* Set the desired text color for links on hover */
+}
+p.indent {
+  text-indent: 5%;
+}
