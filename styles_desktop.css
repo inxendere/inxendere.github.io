@@ -1,232 +1,230 @@
 /* Styles for desktop (e.g., screens wider than 768px) */
-@media (min-width: 769px) {
-  body {
-    font-family: Arial, sans-serif;
-    margin: 0;
-    overflow: hidden; /* Prevent body scrolling */
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  overflow: hidden; /* Prevent body scrolling */
 
-    background-image: url("bg_desktop_1920x1080.jpg");
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-attachment: fixed;
-    background-position-y: bottom;
-  }
+  background-image: url("bg_desktop_1920x1080.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-position-y: bottom;
+}
 
-  .outer-container {
-    max-width: 33.33%; /* Set the maximum width to one-third of the page */
-    float: left; /* Float the container to the left */
-    margin: 1%; /* Add margin for spacing */
-  }
+.outer-container {
+  max-width: 33.33%; /* Set the maximum width to one-third of the page */
+  float: left; /* Float the container to the left */
+  margin: 1%; /* Add margin for spacing */
+}
 
-  .image-container {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr); /* 2 columns with equal width */
-    grid-gap: 10px; /* Adjust the gap between images */
-    align-items: start; /* Align items at the start (top) of the container */
-    justify-content: start; /* Align content to the start (left) of the container */
-    margin: 5px; /* Add margin to the container for spacing */
-  }
-  .icon {
-    text-align: center;
-    flex-direction: column;
-  }
-  .icon img {
-    display: block; /* Make the image a block element to stack it above the text */
-    max-width: 48px;
-    max-height: 48px;
-    margin: 0 auto; /* Center the image horizontally within the icon */
-    cursor: pointer;
-  }
-  .icon span {
-    display: block; /* Make the span a block element to stack it below the image */
-    text-align: center; /* Center the text horizontally */
-    margin-top: 5px; /* Add some spacing between the image and text */
-    font-size: 75%;
-    color: aliceblue;
-  }
+.image-container {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr); /* 2 columns with equal width */
+  grid-gap: 10px; /* Adjust the gap between images */
+  align-items: start; /* Align items at the start (top) of the container */
+  justify-content: start; /* Align content to the start (left) of the container */
+  margin: 5px; /* Add margin to the container for spacing */
+}
+.icon {
+  text-align: center;
+  flex-direction: column;
+}
+.icon img {
+  display: block; /* Make the image a block element to stack it above the text */
+  max-width: 48px;
+  max-height: 48px;
+  margin: 0 auto; /* Center the image horizontally within the icon */
+  cursor: pointer;
+}
+.icon span {
+  display: block; /* Make the span a block element to stack it below the image */
+  text-align: center; /* Center the text horizontally */
+  margin-top: 5px; /* Add some spacing between the image and text */
+  font-size: 75%;
+  color: aliceblue;
+}
 
-  /* Style for the images (optional) */
-  .open-window-button {
-    max-width: 100%; /* Ensure images don't exceed their container */
-    height: auto; /* Maintain aspect ratio */
-  }
+/* Style for the images (optional) */
+.open-window-button {
+  max-width: 100%; /* Ensure images don't exceed their container */
+  height: auto; /* Maintain aspect ratio */
+}
 
-  .window {
-    position: absolute;
-    max-width: 500px;
-    max-height: 600px;
+.window {
+  position: absolute;
+  max-width: 500px;
+  max-height: 600px;
 
-    background-color: #fff;
-    border: 2px solid #ccc;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
-    display: none; /* have it closed by default */
-  }
+  background-color: #fff;
+  border: 2px solid #ccc;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+  display: none; /* have it closed by default */
+}
 
-  .window-content {
-    max-width: 500px;
-    max-height: 550px;
-    overflow: auto; /* Add scrollbar when content exceeds dimensions */
-  }
+.window-content {
+  max-width: 500px;
+  max-height: 550px;
+  overflow: auto; /* Add scrollbar when content exceeds dimensions */
+}
 
-  .window-content p {
-    color: black;
-    padding-top: 10px;
-  }
+.window-content p {
+  color: black;
+  padding-top: 10px;
+}
 
-  .window-content img {
-    max-width: 450px;
-    max-height: 450px;
-    padding-left: 5px;
-    padding-right: 5px;
-    padding-top: 20px;
-  }
+.window-content img {
+  max-width: 450px;
+  max-height: 450px;
+  padding-left: 5px;
+  padding-right: 5px;
+  padding-top: 20px;
+}
 
-  .window-top-bar {
-    background-color: #1f0e49;
-    color: #fff;
-    padding: 5px;
-    cursor: grab; /* Change cursor to indicate draggable */
-    display: flex;
-    justify-content: space-between;
-    position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
-  }
+.window-top-bar {
+  background-color: #1f0e49;
+  color: #fff;
+  padding: 5px;
+  cursor: grab; /* Change cursor to indicate draggable */
+  display: flex;
+  justify-content: space-between;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+}
 
-  .window-name {
-    text-align: left;
-    font-size: 16px;
-  }
+.window-name {
+  text-align: left;
+  font-size: 16px;
+}
 
-  .opening-buttons {
-    display: flex;
-    justify-content: center; /* This places the buttons at opposite ends */
-  }
-  .paradise-button {
-    margin-left: 10%;
-    margin-right: 10%;
-  }
+.opening-buttons {
+  display: flex;
+  justify-content: center; /* This places the buttons at opposite ends */
+}
+.paradise-button {
+  margin-left: 10%;
+  margin-right: 10%;
+}
 
-  .close-button {
-    background: none;
-    border: none;
-    color: #fff;
-    font-size: 14px;
-    cursor: pointer;
-    text-align: right;
-  }
+.close-button {
+  background: none;
+  border: none;
+  color: #fff;
+  font-size: 14px;
+  cursor: pointer;
+  text-align: right;
+}
 
-  .close-button:hover {
-    background-color: #ff0000;
-  }
+.close-button:hover {
+  background-color: #ff0000;
+}
 
-  .window-content {
-    padding: 20px;
-  }
-  .window-content-specs h4 {
-    justify-content: center;
-  }
-  .window-content-specs {
-    vertical-align: top;
-  }
-  .window-content-specs div {
-    border: solid;
-    border-color: aqua;
-    margin-top: 20px;
-  }
+.window-content {
+  padding: 20px;
+}
+.window-content-specs h4 {
+  justify-content: center;
+}
+.window-content-specs {
+  vertical-align: top;
+}
+.window-content-specs div {
+  border: solid;
+  border-color: aqua;
+  margin-top: 20px;
+}
 
-  .project-grid {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr); /* Two equal columns */
-    gap: 10px; /* Gap between grid items */
-  }
+.project-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr); /* Two equal columns */
+  gap: 10px; /* Gap between grid items */
+}
 
-  /* Style each project card */
-  .project {
-    border: 2px solid #c6e9ee;
-    border-radius: 5px;
-    padding: 10px;
-    text-align: center;
-    transition: border-color 0.3s ease-in-out;
-  }
-  .project:hover {
-    border: 2px solid;
-    border-color: rgb(65, 8, 22);
-    border-radius: 5px;
-    padding: 10px;
-    text-align: center;
-  }
+/* Style each project card */
+.project {
+  border: 2px solid #c6e9ee;
+  border-radius: 5px;
+  padding: 10px;
+  text-align: center;
+  transition: border-color 0.3s ease-in-out;
+}
+.project:hover {
+  border: 2px solid;
+  border-color: rgb(65, 8, 22);
+  border-radius: 5px;
+  padding: 10px;
+  text-align: center;
+}
 
-  .project img {
-    max-width: 100%; /* Images fit within their containers */
-    max-height: 100%;
-    border-radius: 5px;
-  }
+.project img {
+  max-width: 100%; /* Images fit within their containers */
+  max-height: 100%;
+  border-radius: 5px;
+}
 
-  .project h3 {
-    font-size: 20px;
-    font-weight: bold;
-    margin: 10px 0;
-  }
-  /* Style links within project grids */
-  .project-link {
-    text-decoration: none; /* Remove underlines from links */
-    color: #e42315; /* Set the desired text color for links */
-  }
+.project h3 {
+  font-size: 20px;
+  font-weight: bold;
+  margin: 10px 0;
+}
+/* Style links within project grids */
+.project-link {
+  text-decoration: none; /* Remove underlines from links */
+  color: #e42315; /* Set the desired text color for links */
+}
 
-  /* Style links on hover */
-  .project-link:hover {
-    text-decoration: none; /* Remove underline on hover */
-    color: #580000; /* Set the desired text color for links on hover */
-    transition: color 0.5s ease-in-out;
-  }
-  p.indent {
-    text-indent: 5%;
-  }
+/* Style links on hover */
+.project-link:hover {
+  text-decoration: none; /* Remove underline on hover */
+  color: #580000; /* Set the desired text color for links on hover */
+  transition: color 0.5s ease-in-out;
+}
+p.indent {
+  text-indent: 5%;
+}
 
-  /* Style for the bottom panel */
-  .taskbar-panel {
-    background-color: rgba(15, 14, 68, 0.4);
-    padding: 1px;
-    position: fixed;
-    bottom: 0;
-    left: 0;
-    width: 100%;
-    height: 32px;
-    display: flex;
-    text-decoration: none;
-  }
+/* Style for the bottom panel */
+.taskbar-panel {
+  background-color: rgba(15, 14, 68, 0.4);
+  padding: 1px;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 32px;
+  display: flex;
+  text-decoration: none;
+}
 
-  /* Style for individual panel items */
-  .panel-item {
-    display: flex;
-    align-items: center;
-    padding-left: 2px;
-    border-color: #333;
-    border: 2px solid;
-    border-radius: 10%;
-    margin-right: 0.2%;
-  }
+/* Style for individual panel items */
+.panel-item {
+  display: flex;
+  align-items: center;
+  padding-left: 2px;
+  border-color: #333;
+  border: 2px solid;
+  border-radius: 10%;
+  margin-right: 0.2%;
+}
 
-  .panel-item a {
-    text-decoration: none;
-  }
-  .panel-item:hover {
-    border-color: rgb(195, 231, 241);
-  }
+.panel-item a {
+  text-decoration: none;
+}
+.panel-item:hover {
+  border-color: rgb(195, 231, 241);
+}
 
-  .panel-item img {
-    max-width: 24px;
-    max-height: 24px;
-  }
+.panel-item img {
+  max-width: 24px;
+  max-height: 24px;
+}
 
-  .panel-item p {
-    font-size: 120%;
-    text-align: center;
-    text-decoration: none !important;
-    color: #c6e9ee;
-  }
+.panel-item p {
+  font-size: 120%;
+  text-align: center;
+  text-decoration: none !important;
+  color: #c6e9ee;
 }
 
 /* styles.css */
