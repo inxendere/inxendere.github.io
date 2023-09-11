@@ -73,6 +73,10 @@ body {
   padding-top: 10px;
 }
 
+.paradise p {
+  padding-top: 20px;
+}
+
 .window-content img {
   max-width: 450px;
   max-height: 450px;
