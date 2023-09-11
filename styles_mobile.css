@@ -32,8 +32,8 @@
   }
   .icon img {
     display: block; /* Make the image a block element to stack it above the text */
-    max-width: 48px;
-    max-height: 48px;
+    max-width: 12px;
+    max-height: 12px;
     margin: 0 auto; /* Center the image horizontally within the icon */
     cursor: pointer;
   }
@@ -228,13 +228,3 @@
     color: #c6e9ee;
   }
 }
-
-/* styles.css */
-
-/* Apply margin to all but the last panel item to avoid a gap on the right of the last item */
-
-/* might be useful */
-
-/* .panel-item:not(:last-child) {
-  margin-right: 10px;
-} */
