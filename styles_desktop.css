@@ -81,7 +81,7 @@
   }
 
   .window-top-bar {
-    background-color: #333;
+    background-color: #1f0e49;
     color: #fff;
     padding: 5px;
     cursor: grab; /* Change cursor to indicate draggable */
@@ -134,7 +134,7 @@
 
   /* Style each project card */
   .project {
-    border: 2px solid #8a667f;
+    border: 2px solid #c6e9ee;
     border-radius: 5px;
     padding: 10px;
     text-align: center;
@@ -142,7 +142,7 @@
   }
   .project:hover {
     border: 2px solid;
-    border-color: yellow;
+    border-color: rgb(65, 8, 22);
     border-radius: 5px;
     padding: 10px;
     text-align: center;
@@ -158,6 +158,21 @@
     font-size: 20px;
     font-weight: bold;
     margin: 10px 0;
+  }
+  /* Style links within project grids */
+  .project-link {
+    text-decoration: none; /* Remove underlines from links */
+    color: #e42315; /* Set the desired text color for links */
+  }
+
+  /* Style links on hover */
+  .project-link:hover {
+    text-decoration: none; /* Remove underline on hover */
+    color: #580000; /* Set the desired text color for links on hover */
+    transition: color 0.5s ease-in-out;
+  }
+  p.indent {
+    text-indent: 5%;
   }
 
   /* Style for the bottom panel */
