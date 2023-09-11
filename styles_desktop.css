@@ -55,7 +55,7 @@
     max-width: 500px;
     max-height: 600px;
 
-    background-color: #d7e8ec;
+    background-color: #fff;
     border: 2px solid #ccc;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
     display: none; /* have it closed by default */
@@ -115,15 +115,16 @@
     padding: 20px;
   }
   .window-content-specs h4 {
-    text-align: center;
+    justify-content: center;
   }
   .window-content-specs {
     vertical-align: top;
+    padding-top: 20px;
   }
   .window-content-specs div {
     border: solid;
     border-color: aqua;
-    margin-top: 20px;
+    padding-top: 20px;
   }
 
   /* Style for the bottom panel */
@@ -165,7 +166,7 @@
   .panel-item p {
     font-size: 120%;
     text-align: center;
-    color: #ff0000;
+    text-decoration: none !important;
   }
 }
 
