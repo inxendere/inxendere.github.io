@@ -99,6 +99,15 @@
     font-size: 16px;
   }
 
+  .opening-buttons {
+    display: flex;
+    justify-content: center; /* This places the buttons at opposite ends */
+  }
+  .paradise-button {
+    margin-left: 10%;
+    margin-right: 10%;
+  }
+
   .close-button {
     background: none;
     border: none;
@@ -204,7 +213,7 @@
     text-decoration: none;
   }
   .panel-item:hover {
-    border-color: yellow;
+    border-color: rgb(195, 231, 241);
   }
 
   .panel-item img {
@@ -216,6 +225,7 @@
     font-size: 120%;
     text-align: center;
     text-decoration: none !important;
+    color: #c6e9ee;
   }
 }
 

@@ -70,6 +70,24 @@ document.addEventListener("DOMContentLoaded", function () {
     activeWindow = null;
   });
 
+  // Get a reference to the buttons and the window
+  const thankYouButton = document.querySelector(
+    ".paradise-button:nth-child(1)"
+  );
+  const farewellButton = document.querySelector(
+    ".paradise-button:nth-child(2)"
+  );
+  const windowElement = document.getElementById("window-win-paradiseanywhere");
+
+  // Function to close the window
+  function closeWindow() {
+    windowElement.style.display = "none";
+  }
+
+  // Add click event listeners to the buttons
+  thankYouButton.addEventListener("click", closeWindow);
+  farewellButton.addEventListener("click", closeWindow);
+
   //bring a window to the front by setting a higher z-index
   function bringWindowToFront(window) {
     windows.forEach((w) => {
@@ -100,7 +118,7 @@ document.addEventListener("DOMContentLoaded", function () {
   }
 
   function openGreetings() {
-    const windowId = "window-win-pfp";
+    const windowId = "window-win-paradiseanywhere";
     const window = document.getElementById(windowId);
 
     if (window) {
