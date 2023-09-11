@@ -1,6 +1,23 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
+    <!-- uncomment this -->
+
+    <!-- Google tag (gtag.js)
+    <script
+      async
+      src="https://www.googletagmanager.com/gtag/js?id=G-0FZ7MM53V9"
+    ></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag() {
+        dataLayer.push(arguments);
+      }
+      gtag("js", new Date());
+
+      gtag("config", "G-0FZ7MM53V9");
+    </script> -->
+
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <!-- load desktop-specific CSS for screens wider than 768px -->
@@ -27,16 +44,21 @@
           <img
             id="win-about-me"
             class="open-window-button"
-            src="icon1.jpg"
+            src="profilepic.png"
             alt="About Me"
           />
           <span>About Me</span>
         </div>
+        <!-- can make an empty slot like this if need
+        <div class="icon">
+          <img id="win-about-me" class="open-window-button" src="" alt="" />
+          <span></span>
+        </div> -->
         <div class="icon">
           <img
             id="win-projects"
             class="open-window-button"
-            src="profilepic.jpg"
+            src="projectsicon.jpg"
             alt="Projects"
           />
           <span>Projects</span>
@@ -45,16 +67,16 @@
           <img
             id="win-animations"
             class="open-window-button"
-            src="icon2.jpg"
+            src="animationicon.jpg"
             alt="Animations"
           />
           <span>Animations</span>
         </div>
         <div class="icon">
           <img
-            id="win-nero"
+            id="win-misc"
             class="open-window-button"
-            src="art1.jpg"
+            src="misc_icon.jpg"
             alt="Miscellaneous"
           />
           <span>Miscellaneous</span>
@@ -100,13 +122,44 @@
 
     <!-- Windows section -->
 
+    <div class="window" id="window-win-about-me">
+      <div class="window-top-bar">
+        <span class="window-name">About Me</span>
+        <button class="close-button">X</button>
+      </div>
+      <div class="window-content">
+        <img src="misc1.jpg" />
+        <h1>Greetings,</h1>
+        <p>
+          my name is Taief (pen name Inxendere) and I love to draw, animate,
+          code, and 3d model. I am an aspiring game developer experienced in
+          Unity and Blender. Please look around my page and feel free to give
+          feedback or reach out if you would like to work together.
+        </p>
+      </div>
+    </div>
+    <div class="window" id="window-win-nero">
+      <div class="window-top-bar">
+        <span class="window-name">nerooooooo</span>
+        <button class="close-button">X</button>
+      </div>
+      <div class="window-content">
+        <p>
+          NERO CLAUDIUS IS THE BEST I LOVE HER SO MUCH SHE'S SO AWESOME AND COOL
+        </p>
+      </div>
+    </div>
+
     <div class="window" id="window-win-projects">
       <div class="window-top-bar">
         <span class="window-name">Projects</span>
         <button class="close-button">X</button>
       </div>
       <div class="window-content">
-        <p>THIS IS THE PROFILE PICTOOR!</p>
+        <p>
+          I first downloaded Unity back during quarantine. I've learned a lot
+          since then and am still discovering new things every day.
+        </p>
         <div class="project-grid">
           <a
             href="https://twitter.com/Inxendere_/status/1676264340528275468?s=20"
@@ -154,34 +207,6 @@
           </a>
           <!-- more game projects here -->
         </div>
-      </div>
-    </div>
-
-    <div class="window" id="window-win-about-me">
-      <div class="window-top-bar">
-        <span class="window-name">About Me</span>
-        <button class="close-button">X</button>
-      </div>
-      <div class="window-content">
-        <img src="misc1.jpg" />
-        <h1>Greetings,</h1>
-        <p>
-          my name is Taief (pen name Inxendere) and I love to draw, animate,
-          code, and 3d model. I am an aspiring game developer experienced in
-          Unity and Blender. Please look around my page and feel free to give
-          feedback or reach out if you would like to work together.
-        </p>
-      </div>
-    </div>
-    <div class="window" id="window-win-nero">
-      <div class="window-top-bar">
-        <span class="window-name">nerooooooo</span>
-        <button class="close-button">X</button>
-      </div>
-      <div class="window-content">
-        <p>
-          NERO CLAUDIUS IS THE BEST I LOVE HER SO MUCH SHE'S SO AWESOME AND COOL
-        </p>
       </div>
     </div>
 
@@ -247,6 +272,75 @@
       </div>
     </div>
 
+    <div class="window" id="window-win-misc">
+      <div class="window-top-bar">
+        <span class="window-name">Miscellaneous</span>
+        <button class="close-button">X</button>
+      </div>
+      <div class="window-content">
+        <p>
+          Silly things I did while bored. Some are high effort projects I spent
+          weeks on, others are goofy memes I whipped up in 20 mins. Wide range
+          of quality.
+        </p>
+
+        <div class="project-grid">
+          <a
+            href="https://twitter.com/Inxendere_/status/1608600401556942849?s=20"
+            target="_blank"
+            class="project-link"
+          >
+            <div class="project">
+              <img src="misc1.jpg" alt="Misc Project 2" />
+              <h3>Object Specific Pixellation - Unity</h3>
+              <p>
+                First version of Ascadia. Used render textures and layers to
+                pixelate only the objects that I wanted to be pixelated.
+              </p>
+            </div>
+          </a>
+
+          <a
+            href="https://twitter.com/Inxendere_/status/1515425232403812359?s=20"
+            target="_blank"
+            class="project-link"
+          >
+            <div class="project">
+              <img src="misc2.jpg" alt="Misc Project 2" />
+              <h3>Hatsune Miku asks if you're from Quebec</h3>
+              <p>
+                My first and hopefully not only vocaloid project. Just a meme to
+                learn the software but I want to make proper songs with it.
+              </p>
+            </div>
+          </a>
+          <a
+            href="https://youtube.com/shorts/olZForOVig8?si=JuIbYGSknVIkJsLL"
+            target="_blank"
+            class="project-link"
+          >
+            <div class="project">
+              <img src="misc3.jpg" alt="Misc Project 2" />
+              <h3>Senzawa (;-;) song but it's Nero</h3>
+              <p>Nero sings The Senpai Song!</p>
+            </div>
+          </a>
+          <a
+            href="https://youtube.com/shorts/oDm7WWyYki8?si=HsklghklrB-4Nt9e"
+            target="_blank"
+            class="project-link"
+          >
+            <div class="project">
+              <img src="misc4.jpg" alt="Misc Project 2" />
+              <h3>"Quality content"</h3>
+              <p>My first 3d animation. Made a meme.</p>
+            </div>
+          </a>
+          <!-- more miscellaneous projects here -->
+        </div>
+      </div>
+    </div>
+
     <div class="window" id="window-win-specs">
       <div class="window-top-bar">
         <span class="window-name">My battle machine.</span>
@@ -272,7 +366,7 @@
       </div>
     </div>
 
-    <!-- taskbar section -->
+    <!-- ========TASKBAR SECTION======== -->
 
     <div class="taskbar-panel">
       <a href="https://www.youtube.com" target="_blank" class="panel-item">
@@ -285,7 +379,11 @@
         <p>Discord</p>
       </a>
 
-      <a href="https://www.youtube.com" target="_blank" class="panel-item">
+      <a
+        href="https://twitter.com/Inxendere_"
+        target="_blank"
+        class="panel-item"
+      >
         <img src="icon2.jpg" alt="Image 2" />
         <p>Twitter</p>
       </a>
@@ -300,9 +398,13 @@
         <p>Spotify</p>
       </a>
 
-      <a href="https://www.youtube.com" target="_blank" class="panel-item">
+      <a
+        href="https://myanimelist.net/profile/incendmoonlite"
+        target="_blank"
+        class="panel-item"
+      >
         <img src="icon2.jpg" alt="Image 2" />
-        <p>MAL</p>
+        <p>MyAnimeList</p>
       </a>
     </div>
   </body>
