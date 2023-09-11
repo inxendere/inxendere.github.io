@@ -171,7 +171,7 @@ body {
 /* Style links within project grids */
 .project-link {
   text-decoration: none; /* Remove underlines from links */
-  color: #e42315; /* Set the desired text color for links */
+  color: #111766; /* Set the desired text color for links */
 }
 
 /* Style links on hover */
