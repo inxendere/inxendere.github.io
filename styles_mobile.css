@@ -140,7 +140,7 @@ body {
   margin-top: 20px;
 }
 
-.project-columns {
+.project-column {
   display: grid;
   grid-template-columns: repeat(2, 1fr); /* Two equal columns */
   gap: 10px; /* Gap between grid items */

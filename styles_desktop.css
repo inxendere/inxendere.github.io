@@ -168,7 +168,7 @@ body {
 .project img {
   max-width: 200px; /* Adjust image width as needed */
   max-height: 200px; /* Adjust image height as needed */
-  border-radius: 5px; /* Rounded corners on the left */
+  border-radius: 10px;
   padding: 10px;
 }
 .project-details {
