@@ -130,12 +130,12 @@ body {
   font-size: 400%;
   text-align: center;
   background-color: #031432;
-  color: #0d58dc;
+  color: #f14f1e;
   font-style: oblique;
 }
 
 .window-content {
-  background-color: rgb(209, 218, 233);
+  background-color: rgb(246, 249, 252);
   padding: 20px;
 }
 .window-content-specs h4 {
