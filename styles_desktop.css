@@ -150,18 +150,12 @@ body {
   margin-top: 20px;
 }
 
-.project-grid {
-  display: grid;
-  grid-template-columns: repeat(2, 1fr); /* Two equal columns */
-  gap: 10px; /* Gap between grid items */
-}
-
 /* Style each project card */
 .project {
+  display: flex; /* Use flexbox to align image and details */
   border: 2px solid #c6e9ee;
   border-radius: 5px;
-  padding: 10px;
-  text-align: center;
+  margin-bottom: 10px;
   transition: border-color 0.3s ease-in-out;
 }
 .project:hover {
@@ -169,19 +163,24 @@ body {
   border-color: rgb(65, 8, 22);
   border-radius: 5px;
   padding: 10px;
-  text-align: center;
 }
 
 .project img {
-  max-width: 100%; /* Images fit within their containers */
-  max-height: 100%;
-  border-radius: 5px;
+  max-width: 200px; /* Adjust image width as needed */
+  max-height: 200px; /* Adjust image height as needed */
+  border-radius: 5px 0 0 5px; /* Rounded corners on the left */
+}
+.project-details {
+  padding: 10px;
 }
 
 .project h3 {
   font-size: 20px;
   font-weight: bold;
-  margin: 10px 0;
+  margin: 0;
+}
+.project p {
+  margin-top: 5px; /* Add space between title and description */
 }
 /* Style links within project grids */
 .project-link {
