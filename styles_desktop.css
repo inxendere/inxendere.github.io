@@ -55,6 +55,8 @@ body {
   max-width: 500px;
   max-height: 600px;
 
+  /* background-color: #fff;
+  border: 2px solid #ccc;   */
   background-color: #fff;
   border: 2px solid #ccc;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
@@ -124,7 +126,16 @@ body {
   background-color: #ff0000;
 }
 
+.inxendere-header {
+  font-size: 400%;
+  text-align: center;
+  background-color: #031432;
+  color: #0d58dc;
+  font-style: oblique;
+}
+
 .window-content {
+  background-color: rgb(209, 218, 233);
   padding: 20px;
 }
 .window-content-specs h4 {
