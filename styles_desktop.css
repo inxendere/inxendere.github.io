@@ -162,13 +162,14 @@ body {
   border: 2px solid;
   border-color: rgb(65, 8, 22);
   border-radius: 5px;
-  padding: 5px;
+  transform: scale(1.02); /* Increase size on hover */
+  box-shadow: 5px 5px 10px rgba(7, 36, 99, 0.3); /* Add a shadow on hover */
 }
 
 .project img {
   max-width: 200px; /* Adjust image width as needed */
   max-height: 200px; /* Adjust image height as needed */
-  border-radius: 10px;
+  border-radius: 15px 0px 0px 15px;
   padding: 10px;
 }
 .project-details {
