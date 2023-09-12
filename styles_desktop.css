@@ -162,13 +162,14 @@ body {
   border: 2px solid;
   border-color: rgb(65, 8, 22);
   border-radius: 5px;
-  padding: 10px;
+  padding: 5px;
 }
 
 .project img {
   max-width: 200px; /* Adjust image width as needed */
   max-height: 200px; /* Adjust image height as needed */
-  border-radius: 5px 0 0 5px; /* Rounded corners on the left */
+  border-radius: 5px; /* Rounded corners on the left */
+  padding: 10px;
 }
 .project-details {
   padding: 10px;
